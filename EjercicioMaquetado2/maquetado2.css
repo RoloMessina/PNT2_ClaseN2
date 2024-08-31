@@ -1,0 +1,80 @@
+.apple-button, .google-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f7;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+    min-width: 200px; /* Ancho mínimo para alinear el contenido */
+}
+
+.apple-button img, .google-button img {
+    width: 24px; /* Tamaño de la imagen */
+    height: 24px;
+    margin-right: 10px;
+}
+
+.google-button img {
+    width: auto; /* Mantiene la proporción del logo */
+    height: 40px; /* Ajusta la altura del logo */
+}
+
+.apple-button:hover,.google-button:hover {
+    background-color: #28a745; /* Color de fondo al pasar el mouse */
+    color: white;
+}
+
+/* Estilo para <h1> */
+h1 {
+    font-weight: bold; /* Hacer el texto en negrita */
+    font-size: 4em;    /* Aumento del tamaño de la fuente predeterminada */
+}
+
+/* Estilo para <p> */
+p {
+    font-weight: bold; /* Hacer el texto en negrita */
+}
+
+/* Estilo para centrar la imagen */
+.col-md-6 img {
+    max-width: 100%; /* Asegura que la imagen no exceda el tamaño de su contenedor */
+    height: auto;   /* Mantiene la proporción de la imagen */
+    display: block; /* Hace que la imagen sea un elemento de bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+#tall-image {
+    width: auto;
+    height: auto;
+    aspect-ratio: 1 / 2;
+}
+
+/* Distribuir los textos proporcionalmente */
+.col-md-6.d-flex.flex-column {
+    height: 100%;
+    justify-content: center; /* Centra los textos verticalmente */
+}
+
+h1, p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Botones más pequeños y más abajo */
+.d-flex.justify-content-center {
+    margin-top: 10%; /* Aumenta la distancia entre los textos y los botones */
+}
+
+.btn-lg {
+    width: 80%;      /* Reduce el ancho de los botones */
+    max-width: 150px; /* Ajusta el ancho máximo de los botones */
+    padding: 10px 20px; /* Ajusta el relleno interno de los botones para que sean más pequeños */
+    font-size: 0.9em; /* Reduce ligeramente el tamaño del texto dentro de los botones */
+}
