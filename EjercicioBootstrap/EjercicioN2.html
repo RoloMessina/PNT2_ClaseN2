@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Probando Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado jumbotron -->
+  <div class="jumbotron text-center py-5 mb-4">
+    <div class="container">
+      <h1 class="display-4">Bienvenido a nuestra página de prueba con Bootstrap</h1>
+      <p class="lead">Este es un simple encabezado jumbotron para captar la atención del usuario.</p>
+    </div>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width: 50%;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagenes/DALLE2~1.WEB" class="d-block w-100" alt="Persona 1 trabajando en software">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/DALLE2~2.WEB" class="d-block w-100" alt="Persona 2 trabajando en software">
+      </div>
+      <div class="carousel-item">
+        <img src="imagenes/DALLE2~3.WEB" class="d-block w-100" alt="Persona 3 trabajando en software">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Contenido Principal -->
+<div class="container my-5">
+  <div class="row">
+    <!-- Contenido Principal -->
+    <div class="col-md-8">
+      <h2>¿Qué es Bootstrap?</h2>
+      <p>Bootstrap es un framework de código abierto para diseñar sitios web y aplicaciones web responsivas. Ofrece una amplia variedad de componentes predefinidos como botones, formularios, y menús de navegación, que facilitan el desarrollo web. Es compatible con los principales navegadores y permite personalizar fácilmente el diseño con su sistema de grid.</p>
+    </div>
+    
+    <!-- Contenido Secundario -->
+    <div class="col-md-4">
+      <h2>Diseño con Bootstrap</h2>
+      <p>Bootstrap facilita la creación de diseños modernos y responsivos. Su sistema de grid permite una alineación flexible y estructurada del contenido.</p>
+    </div>
+  </div>
+</div>
+
+  <!-- Formulario de Contacto -->
+  <div class="container my-5">
+    <h2>Formulario de Contacto</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Vinculación del archivo JavaScript externo -->
+  <script src="validaciones.js"></script>
+  
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4">
+    <div class="container">
+      <p class="text-muted">&copy; 2024 Mi Página Bootstrap. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
